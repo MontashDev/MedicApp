@@ -1,0 +1,4 @@
+.root {
+    -fx-background-image: url("medical-wall.jpg") fixed no-repeat;
+    -fx-background-size: 100%;
+}
