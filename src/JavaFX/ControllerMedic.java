@@ -55,8 +55,50 @@ public class ControllerMedic {
                 telNum.getText(), prescriptionNum.getText(), examNum.getText(), profession.getText(), validite.getText(), bilanRadio.getText(), bilanBio.getText());
     }
 
-    public void newButton(){
+    public void ordoButton(){
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ordo.fxml"));
+        Parent root = null;
+        try {
+            root = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            System.out.println(e.toString());
+            e.printStackTrace();
+        }
+    }
+
+    public void certifMedical(){
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("certifMedic.fxml"));
+        Parent root = null;
+        try {
+            root = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            System.out.println(e.toString());
+            e.printStackTrace();
+        }
+    }
+
+    public void certifDispense(){
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("certifDispense.fxml"));
+        Parent root = null;
+        try {
+            root = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (IOException e) {
+            System.out.println(e.toString());
+            e.printStackTrace();
+        }
+    }
+
+    public void certifApptitude(){
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("certifApptitude.fxml"));
         Parent root = null;
         try {
             root = fxmlLoader.load();

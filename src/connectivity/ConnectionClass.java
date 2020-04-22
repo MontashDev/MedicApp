@@ -82,4 +82,58 @@ public class ConnectionClass {
             e.printStackTrace();
         }
     }
+
+    public static void insertCertifMedic(String name, String surname, Date period) {
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/cabinet_medical", "root", "");
+            String sql = "INSERT INTO certif_medical (nom, prenom, reposPeriode) VALUES(?,?,?)";
+            PreparedStatement prestate = connection.prepareStatement(sql);
+            prestate.setObject(1, name, Types.VARCHAR);
+            prestate.setObject(2, surname, Types.VARCHAR);
+            prestate.setObject(3, period, Types.DATE);
+            prestate.executeUpdate();
+        } catch (Exception e) {
+            System.out.println(e.toString());
+            e.printStackTrace();
+        }
+    }
+
+        public static void insertCertifDispense(String name, String surname, Date period) {
+
+            try {
+                Class.forName("com.mysql.cj.jdbc.Driver");
+                Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/cabinet_medical", "root", "");
+                String sql = "INSERT INTO certif_dispense (nom, prenom, dispensePeriode) VALUES(?,?,?)";
+                PreparedStatement prestate = connection.prepareStatement(sql);
+                prestate.setObject(1,name,Types.VARCHAR);
+                prestate.setObject(2,surname,Types.VARCHAR);
+                prestate.setObject(3,period,Types.DATE);
+                prestate.executeUpdate();
+            } catch (Exception e) {
+                System.out.println(e.toString());
+                e.printStackTrace();
+            }
+    }
+
+    public static void insertCertifApptitude(String idCard, String name, String surname, Date period, String confirmation) {
+
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/cabinet_medical", "root", "");
+            String sql = "INSERT INTO certif_apptitude (idCarte, nom, prenom, dateNaissance, confirmation) VALUES(?,?,?,?,?)";
+            PreparedStatement prestate = connection.prepareStatement(sql);
+            prestate.setObject(1,idCard,Types.INTEGER);
+            prestate.setObject(2,name,Types.VARCHAR);
+            prestate.setObject(3,surname,Types.VARCHAR);
+            prestate.setObject(4,period,Types.DATE);
+            prestate.setObject(5,confirmation,Types.TINYINT);
+            prestate.executeUpdate();
+        } catch (Exception e) {
+            System.out.println(e.toString());
+            e.printStackTrace();
+        }
+    }
+
 }
