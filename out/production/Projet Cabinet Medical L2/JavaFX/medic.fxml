@@ -43,15 +43,15 @@
       <Label layoutX="310.0" layoutY="226.0" text="Bilan Radio" />
       <TextField fx:id="bilanBio" layoutX="373.0" layoutY="271.0" />
       <Label layoutX="316.0" layoutY="275.0" text="Bilan Bio" />
-      <Button fx:id="maj" layoutX="356.0" layoutY="316.0" mnemonicParsing="false" onAction="#button" prefHeight="43.0" prefWidth="89.0" text="Mettre à jour" />
-      <Button fx:id="ordoButton" layoutX="468.0" layoutY="315.0" mnemonicParsing="false" onAction="#ordoButton" prefHeight="45.0" prefWidth="89.0" text="Rédiger Ordnnance" textAlignment="CENTER" wrapText="true">
+      <Button fx:id="maj" layoutX="353.0" layoutY="316.0" mnemonicParsing="false" onAction="#button" prefHeight="43.0" prefWidth="89.0" text="Mettre à jour" />
+      <Button fx:id="ordoButton" layoutX="460.0" layoutY="315.0" mnemonicParsing="false" onAction="#ordoButton" prefHeight="45.0" prefWidth="89.0" text="Rédiger Ordonnance" textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="11.0" />
          </font>
       </Button>
-      <Button fx:id="certifMedical" layoutX="406.0" layoutY="378.0" mnemonicParsing="false" onAction="#certifMedical" text="Certificat médical" />
-      <Button fx:id="certifDispense" layoutX="404.0" layoutY="415.0" mnemonicParsing="false" onAction="#certifDispense" text="Certificat de dispense" />
-      <Button fx:id="certifApptitude" layoutX="397.0" layoutY="451.0" mnemonicParsing="false" onAction="#certifApptitude" text="Certificat d'apptitude" />
+      <Button fx:id="certifMedical" layoutX="396.0" layoutY="378.0" mnemonicParsing="false" onAction="#certifMedical" prefHeight="25.0" prefWidth="128.0" text="Certificat médical" />
+      <Button fx:id="certifDispense" layoutX="396.0" layoutY="412.0" mnemonicParsing="false" onAction="#certifDispense" text="Certificat de dispense" />
+      <Button fx:id="certifApptitude" layoutX="397.0" layoutY="446.0" mnemonicParsing="false" onAction="#certifApptitude" text="Certificat d'apptitude" />
    </children>
    <opaqueInsets>
       <Insets top="10.0" />

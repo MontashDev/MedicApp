@@ -21,7 +21,7 @@ public class ControllerCertifApptitude {
     TextField surname;
 
     @FXML
-    DatePicker period;
+    DatePicker birthDate;
     Date date;
 
     @FXML
@@ -31,7 +31,8 @@ public class ControllerCertifApptitude {
     Button button;
 
     public void button() throws SQLException {
-        date = java.sql.Date.valueOf(period.getValue());
+        date = java.sql.Date.valueOf(birthDate.getValue());
         ConnectionClass.insertCertifApptitude(idCard.getText(),name.getText(),surname.getText(),date,confirmation.getText());
     }
+
 }

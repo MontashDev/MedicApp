@@ -9,7 +9,7 @@ import javafx.scene.control.TextField;
 import java.sql.Date;
 import java.sql.SQLException;
 
-public class ControllerCertifDispense {
+public class ControllerCertifDispense extends ControllerMedic {
 
     @FXML
     TextField name;
@@ -28,4 +28,8 @@ public class ControllerCertifDispense {
         date = java.sql.Date.valueOf(period.getValue());
         ConnectionClass.insertCertifDispense(name.getText(),surname.getText(),date);
     }
+
+    /*public void fill() throws SQLException {
+        ConnectionClass.selectCertifDispense(nom.getText(),prenom.getText());
+    }*/
 }

@@ -16,8 +16,8 @@
             <TextField fx:id="name" layoutX="226.0" layoutY="147.0" />
             <Label layoutX="226.0" layoutY="179.0" text="Prénom :" />
             <TextField fx:id="surname" layoutX="226.0" layoutY="200.0" />
-            <Label layoutX="225.0" layoutY="232.0" text="Jusqu'au :" />
-            <DatePicker fx:id="period" layoutX="226.0" layoutY="254.0" prefHeight="25.0" prefWidth="149.0" />
+            <Label layoutX="225.0" layoutY="232.0" text="Date de naissance :" />
+            <DatePicker fx:id="birthDate" layoutX="226.0" layoutY="254.0" prefHeight="25.0" prefWidth="149.0" />
             <Button fx:id="button" layoutX="264.0" layoutY="346.0" mnemonicParsing="false" onAction="#button" prefHeight="40.0" prefWidth="74.0" text="Valider" />
       <TextField fx:id="confirmation" layoutX="226.0" layoutY="306.0" />
       <Label layoutX="226.0" layoutY="285.0" text="Confirmation :" />
