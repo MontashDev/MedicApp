@@ -1,4 +1,4 @@
-package JavaFX;
+package Controllers;
 
 import connectivity.ConnectionClass;
 import javafx.scene.control.TextField;

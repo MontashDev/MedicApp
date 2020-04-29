@@ -1,28 +1,32 @@
-package JavaFX;
+package Controllers;
 
 import connectivity.ConnectionClass;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 import java.sql.Date;
 import java.sql.SQLException;
 
-public class ControllerPrescription {
+public class ControllerCertifMedic {
+
     @FXML
-    TextArea medic;
+    TextField name;
+
     @FXML
-    TextField dose;
+    TextField surname;
+
     @FXML
     DatePicker period;
     Date date;
+
     @FXML
-    Button send;
+    Button button;
 
     public void button() throws SQLException {
         date = java.sql.Date.valueOf(period.getValue());
-        ConnectionClass.insertPrescription(medic.getText(),dose.getText(),date);
+        ConnectionClass.insertCertifMedic(name.getText(),surname.getText(),date);
     }
+
 }

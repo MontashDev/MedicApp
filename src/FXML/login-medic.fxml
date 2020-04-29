@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="ecran" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.ControllerLogin">
+<AnchorPane id="ecran" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ControllerLoginmedic">
    <children>
    <Pane prefHeight="450.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="241.0" prefHeight="71.0" prefWidth="219.0" text="Welcome dear user !" textFill="#256b67">
@@ -31,6 +31,6 @@
    </Pane>
         </children>
 <stylesheets>
-<URL value="@../CSS/demo.css" />
+<URL value="@../CSS/login.css" />
 </stylesheets>
         </AnchorPane>

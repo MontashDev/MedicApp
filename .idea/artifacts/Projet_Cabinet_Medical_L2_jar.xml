@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Projet Cabinet Medical L2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Projet_Cabinet_Medical_L2_jar</output-path>
+    <root id="archive" name="Projet Cabinet Medical L2.jar">
+      <element id="module-output" name="Projet Cabinet Medical L2" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/.idea/lib/mysql-connector-java-8.0.19.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

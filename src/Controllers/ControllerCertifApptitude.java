@@ -1,34 +1,38 @@
-package JavaFX;
+package Controllers;
 
 import connectivity.ConnectionClass;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
-import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 import java.sql.Date;
 import java.sql.SQLException;
 
+public class ControllerCertifApptitude {
 
-public class ControllerRdv {
+    @FXML
+    TextField idCard;
 
     @FXML
     TextField name;
+
     @FXML
     TextField surname;
+
     @FXML
-    TextArea reason;
+    DatePicker birthDate;
+    Date date;
+
     @FXML
-    DatePicker date;
-    Date rdv;
+    TextField confirmation;
+
     @FXML
-    Button send;
+    Button button;
 
     public void button() throws SQLException {
-        rdv = java.sql.Date.valueOf(date.getValue());
-        ConnectionClass.insertAppointment(name.getText(), surname.getText(), reason.getText(),rdv);
+        date = java.sql.Date.valueOf(birthDate.getValue());
+        ConnectionClass.insertCertifApptitude(idCard.getText(),name.getText(),surname.getText(),date,confirmation.getText());
     }
-
 
 }

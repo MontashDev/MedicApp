@@ -56,7 +56,7 @@ public class ControllerMedic {
     }
 
     public void ordoButton(){
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ordo.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../FXML/ordo.fxml"));
         Parent root = null;
         try {
             root = fxmlLoader.load();
@@ -70,7 +70,7 @@ public class ControllerMedic {
     }
 
     public void certifMedical(){
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("certifMedic.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../FXML/certifMedic.fxml"));
         Parent root = null;
         try {
             root = fxmlLoader.load();
@@ -84,7 +84,7 @@ public class ControllerMedic {
     }
 
     public void certifDispense(){
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("certifDispense.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../FXML/certifDispense.fxml"));
         Parent root = null;
         try {
             root = fxmlLoader.load();
@@ -98,7 +98,7 @@ public class ControllerMedic {
     }
 
     public void certifApptitude(){
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("certifApptitude.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../FXML/certifApptitude.fxml"));
         Parent root = null;
         try {
             root = fxmlLoader.load();

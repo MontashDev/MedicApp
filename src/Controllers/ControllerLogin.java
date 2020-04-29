@@ -1,4 +1,4 @@
-package JavaFX;
+package Controllers;
 
 public class ControllerLogin {
 }

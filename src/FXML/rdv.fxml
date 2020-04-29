@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: f5e889;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.ControllerRdv">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: f5e889;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ControllerRdv">
    <children>
       <Label layoutX="205.0" layoutY="14.0" text="Prise de Rendez-vous">
          <font>

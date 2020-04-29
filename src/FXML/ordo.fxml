@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="484.0" prefWidth="399.0" style="-fx-background-color: ffd7c9;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.ControllerPrescription">
+<AnchorPane prefHeight="484.0" prefWidth="399.0" style="-fx-background-color: ffd7c9;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ControllerPrescription">
    <children>
       <Label layoutX="148.0" layoutY="27.0" text="Ordonnance">
          <font>

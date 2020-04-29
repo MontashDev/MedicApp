@@ -2,3 +2,8 @@
     -fx-background-image: url("medical-wall.jpg") fixed no-repeat;
     -fx-background-size: 100%;
 }
+
+.linear-grad
+{
+    -fx-background-color: linear-gradient(to bottom left , #A9D8D5,#4A5F5E);
+}

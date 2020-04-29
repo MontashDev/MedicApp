@@ -139,23 +139,28 @@ public class ConnectionClass {
         }
     }
 
-    /*public static void selectCertifDispense(String name, String surname) {
+    public static String selectCertifDispense(String name, String surname) {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/cabinet_medical", "root", "");
             String sql = "SELECT nom,prenom FROM dossier_medical WHERE nom=? AND prenom=?";
             PreparedStatement prestate = connection.prepareStatement(sql);
+            prestate.setObject(1, name,Types.VARCHAR);
+            prestate.setObject(2, surname,Types.VARCHAR);
             ResultSet rs = prestate.executeQuery(sql);
-
+            String fullName = " ";
             while(rs.next()){
-
+                fullName = rs.getString(1 )+" " +rs.getString(2);
             }
+            System.out.println(fullName);
+            return fullName;
         } catch (Exception e) {
             System.out.println(e.toString());
             e.printStackTrace();
         }
-    }*/
+        return null;
+    }
 
 
 
