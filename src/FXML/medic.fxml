@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="493.0" prefWidth="600.0" style="-fx-background-color: a3c9f0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.ControllerMedic">
+<AnchorPane prefHeight="493.0" prefWidth="600.0" style="-fx-background-color: a3c9f0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ControllerMedic">
    <children>
       <Label layoutX="199.0" layoutY="14.0" text="Dossier Medical" textAlignment="CENTER">
          <font>

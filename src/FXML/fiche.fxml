@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="625.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ControllerFiche">
+   <children>
+      <Label layoutX="342.0" layoutY="23.0" text="Fiche Patient">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="59.0" text="Nom :" />
+      <TextField fx:id="name" layoutX="49.0" layoutY="76.0" />
+      <Label layoutX="49.0" layoutY="113.0" text="Prénom :" />
+      <TextField fx:id="surname" layoutX="49.0" layoutY="130.0" />
+      <Label layoutX="49.0" layoutY="165.0" text="Date de naissance :" />
+      <DatePicker fx:id="birth" layoutX="49.0" layoutY="182.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="52.0" layoutY="219.0" text="Sexe :" />
+      <TextField fx:id="gender" layoutX="49.0" layoutY="236.0" />
+      <Label layoutX="49.0" layoutY="271.0" text="Adresse :" />
+      <TextField fx:id="adress" layoutX="49.0" layoutY="288.0" />
+      <Label layoutX="49.0" layoutY="325.0" text="N° sécurité sociale :" />
+      <TextField fx:id="secuNumber" layoutX="49.0" layoutY="342.0" />
+      <Label layoutX="49.0" layoutY="377.0" text="Téléphone :" />
+      <TextField fx:id="tel" layoutX="49.0" layoutY="394.0" />
+      <Label layoutX="49.0" layoutY="426.0" text="Validité :" />
+      <TextField fx:id="validity" layoutX="49.0" layoutY="445.0" />
+      <Button fx:id="Send" layoutX="65.0" layoutY="489.0" mnemonicParsing="false" onAction="#send" prefHeight="25.0" prefWidth="93.0" text="Ajouter">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableFiche" layoutX="213.0" layoutY="111.0" prefHeight="403.0" prefWidth="602.0">
+        <columns>
+          <TableColumn fx:id="tableName" prefWidth="75.0" text="Nom" />
+          <TableColumn fx:id="tableSurname" prefWidth="75.0" text="Prénom" />
+            <TableColumn fx:id="tableBirth" prefWidth="75.0" text="Naissance" />
+            <TableColumn fx:id="tableGender" prefWidth="75.0" text="Sexe" />
+            <TableColumn fx:id="tableAddress" prefWidth="75.0" text="Adresse" />
+            <TableColumn fx:id="tableSecu" prefWidth="75.0" text="Secu" />
+            <TableColumn fx:id="tableTel" prefWidth="75.0" text="Tel" />
+            <TableColumn fx:id="tableValidity" prefWidth="75.0" text="Validité" />
+        </columns>
+      </TableView>
+      <Button fx:id="Search" layoutX="498.0" layoutY="76.0" mnemonicParsing="false" onAction="#search" text="Ok" />
+      <TextField fx:id="searchName" layoutX="315.0" layoutY="76.0" prefHeight="25.0" prefWidth="82.0" promptText="Nom" />
+      <TextField fx:id="searchSurname" layoutX="404.0" layoutY="76.0" prefHeight="25.0" prefWidth="82.0" promptText="Prénom" />
+      <Label layoutX="222.0" layoutY="78.0" text="Rechercher :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="Delete" layoutX="541.0" layoutY="76.0" mnemonicParsing="false" onAction="#delete" text="Supprimer" />
+      <TextArea fx:id="resultConsole" layoutX="213.0" layoutY="527.0" prefHeight="84.0" prefWidth="266.0" />
+   </children>
+</AnchorPane>
