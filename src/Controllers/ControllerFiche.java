@@ -1,8 +1,6 @@
 package Controllers;
 
-import connectivity.ConnectionClass;
-import connectivity.Fiche;
-import javafx.beans.property.StringProperty;
+import connectivity.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -11,7 +9,6 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 
-import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.Date;
@@ -96,13 +93,13 @@ public class ControllerFiche implements Initializable {
 
     public void send(){
         date = java.sql.Date.valueOf(birth.getValue());
-        ConnectionClass.insertFiche(name.getText(), surname.getText(), date, secuNumber.getText(), adress.getText(), tel.getText(), validity.getText(), gender.getText());
+        InsertClass.insertFiche(name.getText(), surname.getText(), date, secuNumber.getText(), adress.getText(), tel.getText(), validity.getText(), gender.getText());
         resultConsole.setText("Patient ajouté avec succès !");
     }
 
     public void delete() throws ClassNotFoundException, SQLException{
         try {
-            ConnectionClass.deleteFichePatient(searchName.getText(), searchSurname.getText());
+            DeleteClass.deleteFichePatient(searchName.getText(), searchSurname.getText());
             resultConsole.setText("Suppression réussie !");
         }catch(SQLException e){
             System.out.println("Une erreur est survenue");
@@ -113,7 +110,7 @@ public class ControllerFiche implements Initializable {
 
     public void search() throws SQLException, ClassNotFoundException {
         try {
-            ConnectionClass.searchFiche(searchName.getText(), searchSurname.getText());
+            SelectClass.selectFiche(searchName.getText(), searchSurname.getText());
             populateTableView();
         } catch (SQLException e) {
             System.out.println("Une erreur est survenue");
@@ -146,7 +143,7 @@ public class ControllerFiche implements Initializable {
             fiche.setPatientSecu(resultSet.getInt("secuNum"));
             fiche.setPatientTel(resultSet.getInt("telNum"));
             fiche.setPatientValidity(resultSet.getByte("validite"));
-            ConnectionClass.getInformation();
+            SelectClass.getInformation();
             list.add(fiche);
         }
         tableName.setCellValueFactory(new PropertyValueFactory<>("patientName"));

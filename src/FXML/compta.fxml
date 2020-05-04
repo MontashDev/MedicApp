@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="503.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ControllerCompta">
+   <children>
+      <Label layoutX="227.0" layoutY="36.0" text="Comptabilité">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="105.0" text="Recettes">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="428.0" layoutY="105.0" text="Dépenses">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Line endX="9.0" endY="-19.0" layoutX="301.0" layoutY="116.0" smooth="false" startX="9.0" startY="332.0" />
+      <TextField fx:id="nature" layoutX="53.0" layoutY="178.0" />
+      <Label layoutX="53.0" layoutY="161.0" text="Nature :" />
+      <TextField fx:id="achat" layoutX="387.0" layoutY="178.0" />
+      <TextField fx:id="loyer" layoutX="387.0" layoutY="252.0" />
+      <TextField fx:id="facture" layoutX="387.0" layoutY="333.0" />
+      <Label layoutX="387.0" layoutY="161.0" text="Achat :" />
+      <Label layoutX="387.0" layoutY="235.0" text="Loyer :" />
+      <Label layoutX="387.0" layoutY="316.0" text="Facture :" />
+      <Button fx:id="send" layoutX="94.0" layoutY="226.0" mnemonicParsing="false" onAction="#send" prefHeight="35.0" prefWidth="67.0" text="Envoyer" />
+      <Button fx:id="send2" layoutX="421.0" layoutY="385.0" mnemonicParsing="false" onAction="#send2" prefHeight="35.0" prefWidth="67.0" text="Envoyer" />
+   </children>
+</AnchorPane>
