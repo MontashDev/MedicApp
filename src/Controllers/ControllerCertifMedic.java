@@ -1,6 +1,7 @@
 package Controllers;
 
 import connectivity.ConnectionClass;
+import connectivity.InsertClass;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
@@ -26,7 +27,7 @@ public class ControllerCertifMedic {
 
     public void button() throws SQLException {
         date = java.sql.Date.valueOf(period.getValue());
-        ConnectionClass.insertCertifMedic(name.getText(),surname.getText(),date);
+        InsertClass.insertCertifMedic(name.getText(), surname.getText(), date);
     }
 
 }

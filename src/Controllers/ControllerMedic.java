@@ -1,7 +1,8 @@
-package JavaFX;
+package Controllers;
 
 
 import connectivity.ConnectionClass;
+import connectivity.InsertClass;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -51,7 +52,7 @@ public class ControllerMedic {
 
     public void button() throws SQLException {
         date = java.sql.Date.valueOf(age.getValue());
-        ConnectionClass.insertMedical(carteID.getText(), secuNum.getText(), nom.getText(), prenom.getText(), date, adresse.getText(),
+        InsertClass.insertMedical(carteID.getText(), secuNum.getText(), nom.getText(), prenom.getText(), date, adresse.getText(),
                 telNum.getText(), prescriptionNum.getText(), examNum.getText(), profession.getText(), validite.getText(), bilanRadio.getText(), bilanBio.getText());
     }
 

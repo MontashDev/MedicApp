@@ -1,6 +1,7 @@
 package Controllers;
 
 import connectivity.ConnectionClass;
+import connectivity.InsertClass;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
@@ -32,7 +33,7 @@ public class ControllerCertifApptitude {
 
     public void button() throws SQLException {
         date = java.sql.Date.valueOf(birthDate.getValue());
-        ConnectionClass.insertCertifApptitude(idCard.getText(),name.getText(),surname.getText(),date,confirmation.getText());
+        InsertClass.insertCertifApptitude(idCard.getText(), name.getText(), surname.getText(), date, confirmation.getText());
     }
 
 }

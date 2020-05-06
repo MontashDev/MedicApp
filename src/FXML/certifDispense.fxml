@@ -7,20 +7,24 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.ControllerCertifDispense">
-        <children>
-            <Label layoutX="215.0" layoutY="31.0" prefHeight="30.0" prefWidth="209.0" text="Certificat de dispense">
-                <font>
-                    <Font name="System Bold" size="20.0" />
-                </font></Label>
-            <Label layoutX="114.0" layoutY="91.0" text="Nom :" />
-            <TextField fx:id="name" layoutX="114.0" layoutY="112.0" />
-            <Label layoutX="337.0" layoutY="91.0" text="Prénom :" />
-            <TextField fx:id="surname" layoutX="336.0" layoutY="112.0" />
-            <Label layoutX="213.0" layoutY="180.0" text="Jusqu'au :" />
-            <DatePicker fx:id="period" layoutX="213.0" layoutY="204.0" />
-            <Button fx:id="button" layoutX="213.0" layoutY="291.0" mnemonicParsing="false" onAction="#button" prefHeight="40.0" prefWidth="74.0" text="Valider" />
-      <Button layoutX="-52.0" layoutY="176.0" mnemonicParsing="false" text="Button" />
-      <Button fx:id="fill" layoutX="321.0" layoutY="291.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="inDev" />
-        </children>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ControllerCertifDispense">
+    <children>
+        <Label layoutX="215.0" layoutY="31.0" prefHeight="30.0" prefWidth="209.0" text="Certificat de dispense">
+            <font>
+                <Font name="System Bold" size="20.0"/>
+            </font>
+        </Label>
+        <Label layoutX="114.0" layoutY="91.0" text="Nom :"/>
+        <TextField fx:id="name" layoutX="114.0" layoutY="112.0"/>
+        <Label layoutX="337.0" layoutY="91.0" text="Prénom :"/>
+        <TextField fx:id="surname" layoutX="336.0" layoutY="112.0"/>
+        <Label layoutX="213.0" layoutY="180.0" text="Jusqu'au :"/>
+        <DatePicker fx:id="period" layoutX="213.0" layoutY="204.0"/>
+        <Button fx:id="button" layoutX="213.0" layoutY="291.0" mnemonicParsing="false" onAction="#button"
+                prefHeight="40.0" prefWidth="74.0" text="Valider"/>
+        <Button layoutX="-52.0" layoutY="176.0" mnemonicParsing="false" text="Button"/>
+        <Button fx:id="fill" layoutX="321.0" layoutY="291.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0"
+                text="inDev"/>
+    </children>
 </AnchorPane>

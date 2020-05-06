@@ -10,17 +10,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="493.0" prefWidth="600.0" style="-fx-background-color: a3c9f0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.ControllerMedic">
+<AnchorPane prefHeight="493.0" prefWidth="600.0" style="-fx-background-color: a3c9f0;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controllers.ControllerMedic">
    <children>
       <Label layoutX="199.0" layoutY="14.0" text="Dossier Medical" textAlignment="CENTER">
          <font>
-            <Font name="System Bold" size="30.0" />
+            <Font name="System Bold" size="30.0"/>
          </font>
          <opaqueInsets>
-            <Insets />
+            <Insets/>
          </opaqueInsets>
       </Label>
-      <TextField fx:id="carteID" layoutX="139.0" layoutY="80.0" />
+      <TextField fx:id="carteID" layoutX="139.0" layoutY="80.0"/>
       <Label layoutX="68.0" layoutY="84.0" prefHeight="17.0" prefWidth="66.0" text="N° Identité :" />
       <TextField fx:id="secuNum" layoutX="139.0" layoutY="128.0" />
       <Label layoutX="51.0" layoutY="132.0" prefHeight="17.0" prefWidth="89.0" text="N° Carte Vitale :" />

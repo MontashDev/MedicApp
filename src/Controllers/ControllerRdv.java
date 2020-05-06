@@ -1,6 +1,7 @@
 package Controllers;
 
 import connectivity.ConnectionClass;
+import connectivity.InsertClass;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
@@ -27,7 +28,7 @@ public class ControllerRdv {
 
     public void button() throws SQLException {
         rdv = java.sql.Date.valueOf(date.getValue());
-        ConnectionClass.insertAppointment(name.getText(), surname.getText(), reason.getText(),rdv);
+        InsertClass.insertAppointment(name.getText(), surname.getText(), reason.getText(), rdv);
     }
 
 

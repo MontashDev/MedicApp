@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 
 import JavaFX.Main;
 import connectivity.ConnectionClass;
+import connectivity.InsertClass;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -79,7 +80,7 @@ public class ControllerLogin<connection> implements Initializable {
         if(event.getSource().equals(btnIn)) {
             String user = textField2.getText();
             String pass = passwordField2.getText();
-            ConnectionClass.createAccount(user, pass);
+            InsertClass.createAccount(user, pass);
             pnlConnect.toFront();
         }
     }

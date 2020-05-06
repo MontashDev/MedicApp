@@ -1,6 +1,8 @@
-package JavaFX;
+package Controllers;
 
 import connectivity.ConnectionClass;
+import connectivity.InsertClass;
+import connectivity.SelectClass;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
@@ -26,10 +28,10 @@ public class ControllerCertifDispense extends ControllerMedic {
 
     public void button() throws SQLException {
         date = java.sql.Date.valueOf(period.getValue());
-        ConnectionClass.insertCertifDispense(name.getText(),surname.getText(),date);
+        InsertClass.insertCertifDispense(name.getText(), surname.getText(), date);
     }
 
     public void fill() throws SQLException {
-        ConnectionClass.selectCertifDispense(nom.getText(),prenom.getText());
+        SelectClass.selectCertifDispense(nom.getText(), prenom.getText());
     }
 }
