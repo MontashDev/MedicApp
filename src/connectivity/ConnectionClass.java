@@ -1,14 +1,21 @@
 package connectivity;
 
-import com.mysql.cj.protocol.Resultset;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.TextField;
-
-import javax.xml.transform.Result;
 import java.sql.*;
-import java.util.List;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 public class ConnectionClass {
+
+    public static Connection conDB(){
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/cabinet_medical", "root", "");
+            return connection;
+        }catch(Exception e){
+            e.printStackTrace();
+            return null;
+        }
+    }
     public static void insertUser(String pseudo, String password, Byte role){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -19,11 +26,27 @@ public class ConnectionClass {
             prestate.setObject(2,password,Types.VARCHAR);
             prestate.setObject(3,role,Types.TINYINT);
             prestate.executeUpdate();
-            } catch (Exception e) {
+        } catch (Exception e) {
             System.out.println(e.toString());
             e.printStackTrace();
         }
     }
+
+    public static void createAccount(String pseudo, String password){
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost/cabinet_medical", "root", "");
+            String sql = "INSERT INTO utilisateur (pseudo,password) VALUES(?,?)";
+            PreparedStatement prestate = connection.prepareStatement(sql);
+            prestate.setObject(1,pseudo,Types.VARCHAR);
+            prestate.setObject(2,password,Types.VARCHAR);
+            prestate.executeUpdate();
+        } catch (Exception e) {
+            System.out.println(e.toString());
+            e.printStackTrace();
+        }
+    }
+
     public static void insertMedical(String carteID, String secuNum, String nom, String prenom, Date age, String adresse, String telNum, String prescriptionNum, String examNum, String profession, String validite, String bilanRadio, String bilanBio) {
 
         try {

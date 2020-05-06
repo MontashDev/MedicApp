@@ -7,3 +7,19 @@
 {
     -fx-background-color: linear-gradient(to bottom left , #A9D8D5,#4A5F5E);
 }
+
+.button1
+{
+    -fx-background-color: #5D7775;
+    -fx-text-fill : #A3D0CD;
+}
+
+.button1:hover
+{
+    -fx-text-fill : #F8B478;
+}
+
+.button1:pressed
+{
+    -fx-text-fill: #8F6845;
+}
