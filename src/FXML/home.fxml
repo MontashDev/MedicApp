@@ -11,9 +11,9 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ControllerHome">
    <children>
-      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #269B38;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #228636;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label layoutX="161.0" layoutY="33.0" prefHeight="50.0" prefWidth="279.0" text="Welcome to MedicApp !!!" textFill="#0f4bab">
+            <Label layoutX="161.0" layoutY="33.0" prefHeight="50.0" prefWidth="279.0" text="Welcome to MedicApp !" textFill="#094251">
                <font>
                   <Font size="24.0" />
                </font>
