@@ -21,7 +21,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("../FXML/"+fxlmName+".fxml"));
         secondStage.setTitle("MedicApp");
         secondStage.setScene(new Scene(root, 600, 425));
-        secondStage.initStyle(StageStyle.DECORATED);
+        secondStage.initStyle(StageStyle.UNDECORATED);
         secondStage.show();
     }
 
