@@ -20,7 +20,7 @@ public class Main extends Application {
     public void newStage(Stage secondStage,String fxlmName) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("../FXML/"+fxlmName+".fxml"));
         secondStage.setTitle("MedicApp");
-        secondStage.setScene(new Scene(root, 650, 425));
+        secondStage.setScene(new Scene(root, 600, 425));
         secondStage.initStyle(StageStyle.DECORATED);
         secondStage.show();
     }
