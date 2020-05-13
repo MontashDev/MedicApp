@@ -111,7 +111,8 @@ public class ControllerFiche implements Initializable {
     public void search() throws SQLException, ClassNotFoundException {
         try {
             SelectClass.selectFiche(searchName.getText(), searchSurname.getText());
-            populateTableView();
+                populateTableView();
+                resultConsole.setText(searchName.getText() + " " + searchSurname.getText() + " trouvé !");
         } catch (SQLException e) {
             System.out.println("Une erreur est survenue");
             e.printStackTrace();
