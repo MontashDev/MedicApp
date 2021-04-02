@@ -3,7 +3,7 @@
 Projet réalisé par Victor ROLLAND, Thomas NINCI et Alexis LEONARDUZZI 
 
 Afin de pouvoir compiler et executer notre projet,
-	vous aller devoir suivre ces étapes:
+	vous allez devoir suivre ces étapes:
 
 - décompresser le dossier
 
