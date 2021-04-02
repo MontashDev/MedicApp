@@ -1,0 +1,28 @@
+Rapport du Projet de génie logiciel permettant la gestion d'un cabinet médical
+
+Réalisé par Thomas NINCI, Victor ROLLAND et Alexis LEONARDUZZI
+
+Pour établir la connexion de notre base de donnée avec notre projet java nous 
+avons utilisé PhpMyAdmin sur WampServer ou Xamp et installé mySQLconnector dans 
+notre package java..
+Le premier package que nous allons développer est « connectivity » qui regroupe 
+toutes les classes permettant la liaison avec la base de donnée et la mise en place des 
+requête SQL pour interroger les différentes tables. Cela va ainsi permettre tantôt de 
+récupérer des informations voulues dans la table tantôt d'y ajouter des élément à partir de 
+l'application FXML. Ces classes sont séparées pour améliorer la lisibilité du code en 
+fonction des requêtes.
+Pour la partie codée en JavaFXML nous avons utilisé le scene builder Gluon Scene Builder. 
+Afin d'ajouter quelques effets et couleurs dans 
+notre application nous avons décidé d'inclure des feuilles de styles CSS ainsi que des 
+icônes (application « Icons8 Pichon », et utilisation également de « Just Color Picker » 
+pour les codes couleur). Dans notre package « FXML » se trouve donc tous les fichiers 
+javaFXML correspondant à toutes les fenêtres différentes de notre application par exemple 
+une sera dédié au login et une autre aux dossiers médicaux.
+Dans le package « Controllers » se trouve une classe java pour chaque fichier FXML 
+qui permet d'associer des actions à chaque bouton déjà présent sur les différentes 
+« fenêtres » de notre application. Par exemple envoyer des informations sur la base de 
+données ou à l'inverse en récupérer en appelant un des fonctions située dans la package 
+« connectivity ».
+Pour terminer avec le code nous allons parler brièvement du Main qui nous permet 
+de lancer notre application. Son rôle est d'ouvrir la fenêtre du login qui va ensuite nous 
+permettre de nous connecter pour naviguer entre les différentes options.
