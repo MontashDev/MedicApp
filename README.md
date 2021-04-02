@@ -1,5 +1,5 @@
 # MedicApp
-/*** Ré-Upload d'un projet de 2020 ***\
+/*** Ré-Upload d'un projet de 2020 ***\\
 Projet réalisé par Victor ROLLAND, Thomas NINCI et Alexis LEONARDUZZI 
 
 Afin de pouvoir compiler et executer notre projet,
